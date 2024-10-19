@@ -1,0 +1,745 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww14160\viewh14060\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 libname mylib "P:\\Practicum";\
+filename bigrec "P:\\Practicum\\FA15_Data.txt"  lrecl = 65576;\
+data mytemp;\
+infile bigrec;\
+input \
+myid 1-7\
+ap_ipad  8101 /* target variable */\
+\
+/* single drivers */\
+internet_src_entertain_alot  5497\
+internet_src_entertain_alil  5535   \
+internet_src_entertain_neit  5611\
+internet_src_entertain_dlil  5649\
+internet_src_entertain_dlot  5687 \
+creative_person_alot  4669\
+creative_person_alil  4746   \
+creative_person_neit  4900\
+creative_person_dlil  4977\
+creative_person_dlot  5054                                              \
+socialsite_difdevice_alot  6849\
+socialsite_difdevice_alil  6864   \
+socialsite_difdevice_neit  6894\
+socialsite_difdevice_dlil  6909\
+socialsite_difdevice_dlot  6924\
+/*pay_extra_quality_goods_alot  4641\
+pay_extra_quality_goods_alil  4718   \
+pay_extra_quality_goods_neit  4872\
+pay_extra_quality_goods_dlil  4949\
+pay_extra_quality_goods_dlot  5026\
+important_well_informed_alot 4670\
+important_well_informed_alil 4747\
+important_well_informed_neit 4901\
+important_well_informed_dlil 4978\
+important_well_informed_dlot 5055*/\
+buy_neighbors_approve_alot 7599\
+buy_neighbors_approve_alil 7622\
+buy_neighbors_approve_neit 7668\
+buy_neighbors_approve_dlil 7691\
+buy_neighbors_approve_dlot 7714\
+dfct_say_no_to_kids_alot 4676\
+dfct_say_no_to_kids_alil 4753\
+dfct_say_no_to_kids_neit 4907\
+dfct_say_no_to_kids_dlil 4978\
+dfct_say_no_to_kids_dlot 5061\
+happy_stnrd_living_alot 4625\
+happy_stnrd_living_alil 4702\
+happy_stnrd_living_neit 4856\
+happy_stnrd_living_dlil 4933\
+happy_stnrd_living_dlot 5010  \
+optimist_alot 4656\
+optimist_alil 4733\
+optimist_neit 4887\
+optimist_dlil 4964\
+optimist_dlot 5041\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 love_idea_travel_abroad_alot 7066\
+love_idea_travel_abroad_alil 7073\
+love_idea_travel_abroad_neit 7087\
+love_idea_travel_abroad_dlil 7094\
+love_idea_travel_abroad_dlot 7101\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0  \
+/*early adopter tech abstract var */\
+ love_buy_gadget_alot 6954\
+love_buy_gadget_alil 6971\
+ love_buy_gadget_neit 7005\
+ love_buy_gadget_dlil 7022\
+ love_buy_gadget_dlot 7039\
+first_friends_tech_alot 6945\
+first_friends_tech_alil 6962\
+first_friends_tech_neit 6996\
+first_friends_tech_dlil 7013\
+first_friends_tech_dlot 7030\
+ /*pay_anything_electronic_alot 6946\
+ pay_anything_electronic_alil 6963\
+ pay_anything_electronic_neit 6997\
+ pay_anything_electronic_dlil 7014\
+ pay_anything_electronic_dlot 7031*/\
+ have_lots_gadgets_alot 6959\
+ have_lots_gadgets_alil 6976\
+ have_lots_gadgets_neit 7010\
+ have_lots_gadgets_dlil 7027\
+ have_lots_gadgets_dlot 7044\
+ keep_up_tech_alot 6953\
+ keep_up_tech_alil 6970\
+ keep_up_tech_neit 7004\
+ keep_up_tech_dlil 7021\
+ keep_up_tech_dlot 7038\
+\
+ /*Image Conscous abstract var \
+always_brand_name_alot 7597\
+always_brand_name_alil 7620\
+always_brand_name_neit 7666\
+always_brand_name_dlil 7689\
+always_brand_name_dlot 7712\
+buy_neighbors_approve_alot 7599\
+buy_neighbors_approve_alil 7622\
+buy_neighbors_approve_neit 7668\
+buy_neighbors_approve_dlil 7691\
+buy_neighbors_approve_dlot 7714\
+easily_swayed_alot 4658\
+easily_swayed_alil 4735\
+easily_swayed_neit 4889\
+easily_swayed_dlil 4966\
+easily_swayed_dlot 5043\
+keep_young_looking_alot 4660\
+keep_young_looking_alil 4737\
+keep_young_looking_neit 4891\
+keep_young_looking_dlil 4968\
+keep_young_looking_dlot 5045\
+/* switched out the family_thinks_well var with new var: keep_young_looking */\
+/* family_thinks_well_alot 4633\
+family_thinks_well_alil 4710\
+family_thinks_well_neit 4864\
+family_thinks_well_dlil 4941\
+family_thinks_well_dlot 5018; */ \
+\
+/* Adventurous Traveler Abstract Var */\
+vac_dif_places_alot 7065\
+vac_dif_places_alil 7072\
+vac_dif_places_neit 7086\
+vac_dif_places_dlil 7093\
+vac_dif_places_dlot 7100\
+/*vac_exp_diff_from_friends_alot 7069\
+vac_exp_diff_from_friends_alil 7076\
+vac_exp_diff_from_friends_neit 7090\
+vac_exp_diff_from_friends_dlil 7097\
+vac_exp_diff_from_friends_dlot 7104*/\
+adventuresome_alot 7455\
+adventuresome_alil 7475\
+adventuresome_neit 7515\
+adventuresome_dlil 7535\
+adventuresome_dlot 7555\
+love_idea_travel_abroad_alot 7066\
+love_idea_travel_abroad_alil 7073\
+love_idea_travel_abroad_neit 7087\
+love_idea_travel_abroad_dlil 7094\
+love_idea_travel_abroad_dlot 7101\
+trvl_plan_unknwn_cmpny_alot 7067\
+trvl_plan_unknwn_cmpny_alil 7074\
+trvl_plan_unknwn_cmpny_neit 7088\
+trvl_plan_unknwn_cmpny_dlil 7095\
+trvl_plan_unknwn_cmpny_dlot 7102\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 /* Descriptors */\
+fire 8106\
+galaxy 8111\
+HGTV 9642\
+Gender_Male 2383\
+Latino 2371\
+TheBachelor 15149\
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+char_uses_brand_alot 6243 \
+char_uses_brand_alil 6251\
+char_uses_brand_neit 6267 \
+char_uses_brand_dlil 6275 \
+char_uses_brand_dlot 6283\
+tech_connects_alot 6957 \
+tech_connects_alil 6974 \
+tech_connects_neit 7008 \
+tech_connects_dlil 7025 \
+tech_connects_dlot 7042;\
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 run;\
+\
+/* the above reads in the raw data from the data file -  now create five point scale variables */\
+/* now before we create variables lets create formats so we know what each value will mean */\
+proc format;\
+value myscale\
+     1 = "disagree a lot"\
+     2 = "disagree a little"\
+     3 = "neither agree nor disagree"\
+     4 = "agree a little"\
+     5 = "agree a lot";\
+value yesno\
+     0 = "no"\
+     1 = "yes";\
+run;\
+/* do that by creating a new temp sas data set myvars by starting with the temp sas data set mytemp */\
+data myvars;\
+set mytemp;\
+if ap_ipad = . then apple_ipad = 0;\
+if ap_ipad = 1 then apple_ipad = 1;\
+if internet_src_entertain_alot = 1 then internet_src_entertainment = 5;\
+if internet_src_entertain_alil = 1 then internet_src_entertainment = 4;   \
+if internet_src_entertain_neit = 1 then internet_src_entertainment = 3;\
+if internet_src_entertain_dlil = 1 then internet_src_entertainment = 2;\
+if internet_src_entertain_dlot = 1 then internet_src_entertainment = 1;\
+if creative_person_alot = 1 then creative_person = 5;\
+if creative_person_alil = 1 then creative_person = 4; \
+if creative_person_neit = 1 then creative_person = 3;\
+if creative_person_dlil = 1 then creative_person = 2;\
+if creative_person_dlot = 1 then creative_person = 1;\
+if socialsite_difdevice_alot = 1 then social_site_dif_device = 5;\
+if socialsite_difdevice_alil = 1 then social_site_dif_device = 4;\
+if socialsite_difdevice_neit = 1 then social_site_dif_device = 3;\
+if socialsite_difdevice_dlil = 1 then social_site_dif_device = 2;\
+if socialsite_difdevice_dlot = 1 then social_site_dif_device = 1;\
+/*if pay_extra_quality_goods_alot = 1 then pay_extra_quality_goods = 5;\
+if pay_extra_quality_goods_alil = 1 then pay_extra_quality_goods = 4;\
+if pay_extra_quality_goods_neit = 1 then pay_extra_quality_goods = 3;\
+if pay_extra_quality_goods_dlil = 1 then pay_extra_quality_goods = 2;\
+if pay_extra_quality_goods_dlot = 1 then pay_extra_quality_goods = 1;\
+if important_well_informed_alot = 1 then important_well_informed = 5;\
+if important_well_informed_alil = 1 then important_well_informed = 4;\
+if important_well_informed_neit = 1 then important_well_informed = 3;\
+if important_well_informed_dlil = 1 then important_well_informed = 2;\
+if important_well_informed_dlot = 1 then important_well_informed = 1;*/\
+if buy_neighbors_approve_alot = 1 then buy_neighbors_approve = 5;\
+if buy_neighbors_approve_alil  = 1 then buy_neighbors_approve = 4;\
+if buy_neighbors_approve_neit  = 1 then buy_neighbors_approve = 3;\
+if buy_neighbors_approve_dlil  = 1 then buy_neighbors_approve = 2;\
+if buy_neighbors_approve_dlot = 1 then buy_neighbors_approve = 1;\
+if dfct_say_no_to_kids_alot = 1 then dfct_say_no_to_kids = 5;\
+if dfct_say_no_to_kids_alil  = 1 then dfct_say_no_to_kids = 4;\
+if dfct_say_no_to_kids_neit  = 1 then dfct_say_no_to_kids = 3;\
+if dfct_say_no_to_kids_dlil  = 1 then dfct_say_no_to_kids = 2;\
+if dfct_say_no_to_kids_dlot = 1 then dfct_say_no_to_kids = 1;\
+if happy_stnrd_living_alot = 1 then happy_stnrd_living = 5;\
+if happy_stnrd_living_alil  = 1 then happy_stnrd_living = 4;\
+if happy_stnrd_living_neit  = 1 then happy_stnrd_living = 3;\
+if happy_stnrd_living_dlil  = 1 then happy_stnrd_living = 2;\
+if happy_stnrd_living_dlot = 1 then happy_stnrd_living = 1;\
+if optimist_alot = 1 then optimist = 5;\
+if optimist_alil  = 1 then optimist = 4;\
+if optimist_neit  = 1 then optimist = 3;\
+if optimist_dlil  = 1 then optimist = 2;\
+if optimist_dlot  = 1 then optimist = 1;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 if love_idea_travel_abroad_alot = 1 then love_idea_travel_abroad = 5;\
+if love_idea_travel_abroad_alil  = 1 then love_idea_travel_abroad = 4;\
+if love_idea_travel_abroad_neit  = 1 then love_idea_travel_abroad = 3;\
+if love_idea_travel_abroad_dlil  = 1 then love_idea_travel_abroad = 2;\
+if love_idea_travel_abroad_dlot  = 1 then love_idea_travel_abroad = 1;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+/* early adopter tech abstract var */\
+if love_buy_gadget_alot = 1 then love_buy_gadget = 5;\
+if love_buy_gadget_alil = 1 then love_buy_gadget = 4;\
+if love_buy_gadget_neit = 1 then love_buy_gadget = 3;\
+if love_buy_gadget_dlil = 1 then love_buy_gadget = 2;\
+if love_buy_gadget_dlot = 1 then love_buy_gadget = 1;\
+if first_friends_tech_alot = 1 then first_friends_tech = 5;\
+if first_friends_tech_alil = 1 then first_friends_tech = 4;\
+if first_friends_tech_neit = 1 then first_friends_tech = 3;\
+if first_friends_tech_dlil = 1 then first_friends_tech = 2;\
+if first_friends_tech_dlot = 1 then first_friends_tech = 1;\
+/*if pay_anything_electronic_alot = 1 then pay_anything_electronic = 5;\
+if pay_anything_electronic_alil = 1 then pay_anything_electronic = 4;\
+if pay_anything_electronic_neit = 1 then pay_anything_electronic = 3;\
+if pay_anything_electronic_dlil = 1 then pay_anything_electronic = 2;\
+if pay_anything_electronic_dlot = 1 then pay_anything_electronic = 1;*/\
+if have_lots_gadgets_alot = 1 then have_lots_gadgets = 5;\
+if have_lots_gadgets_alil  = 1 then have_lots_gadgets = 4;\
+if have_lots_gadgets_neit  = 1 then have_lots_gadgets = 3;\
+if have_lots_gadgets_dlil  = 1 then have_lots_gadgets = 2;\
+if have_lots_gadgets_dlot  = 1 then have_lots_gadgets = 1;\
+if keep_up_tech_alot = 1 then keep_up_tech = 5;\
+if keep_up_tech_alil  = 1 then keep_up_tech = 4;\
+if keep_up_tech_neit  = 1 then keep_up_tech = 3;\
+if keep_up_tech_dlil  = 1 then keep_up_tech = 2;\
+if keep_up_tech_dlot  = 1 then keep_up_tech = 1;\
+\
+/* Image Conscous abstract var\
+if always_brand_name_alot = 1 then always_brand_name = 5;\
+if always_brand_name_alil  = 1 then always_brand_name = 4;\
+if always_brand_name_neit  = 1 then always_brand_name = 3;\
+if always_brand_name_dlil  = 1 then always_brand_name = 2;\
+if always_brand_name_dlot  = 1 then always_brand_name = 1;\
+if buy_neighbors_approve_alot = 1 then buy_neighbors_approve = 5;\
+if buy_neighbors_approve_alil  = 1 then buy_neighbors_approve = 4;\
+if buy_neighbors_approve_neit  = 1 then buy_neighbors_approve = 3;\
+if buy_neighbors_approve_dlil  = 1 then buy_neighbors_approve = 2;\
+if buy_neighbors_approve_dlot = 1 then buy_neighbors_approve = 1;\
+if easily_swayed_alot = 1 then easily_swayed = 5;\
+if easily_swayed_alil  = 1 then easily_swayed = 4;\
+if easily_swayed_neit  = 1 then easily_swayed = 3;\
+if easily_swayed_dlil  = 1 then easily_swayed = 2;\
+if easily_swayed_dlot  = 1 then easily_swayed = 1;\
+if keep_young_looking_alot = 1 then keep_young_looking = 5;\
+if keep_young_looking_alil = 1 then keep_young_looking = 4;\
+if keep_young_looking_neit = 1 then keep_young_looking =  3;\
+if keep_young_looking_dlil = 1 then keep_young_looking =  2;\
+if keep_young_looking_dlot = 1 then keep_young_looking =  1;\
+\
+/* if family_thinks_well_alot = 1 then family_thinks_well = 5;\
+if family_thinks_well_alil  = 1 then family_thinks_well = 4;\
+if family_thinks_well_neit  = 1 then family_thinks_well = 3;\
+if family_thinks_well_dlil  = 1 then family_thinks_well = 2;\
+if family_thinks_well_dlot  = 1 then family_thinks_well = 1; */\
+\
+/* adventurous traveler abstract var */\
+if vac_dif_places_alot = 1 then vac_dif_places = 5;\
+if vac_dif_places_alil = 1 then vac_dif_places = 4;\
+if vac_dif_places_neit = 1 then vac_dif_places = 3;\
+if vac_dif_places_dlil = 1 then vac_dif_places= 2;\
+if vac_dif_places_dlot = 1 then vac_dif_places = 1;\
+/*if vac_exp_diff_from_friends_alot = 1 then vac_exp_diff_from_friends = 5;\
+if vac_exp_diff_from_friends_alil = 1 then vac_exp_diff_from_friends = 4;\
+if vac_exp_diff_from_friends_neit = 1 then vac_exp_diff_from_friends = 3;\
+if vac_exp_diff_from_friends_dlil = 1 then vac_exp_diff_from_friends = 2;\
+if vac_exp_diff_from_friends_dlot = 1 then vac_exp_diff_from_friends = 1;*/\
+if adventuresome_alot = 1 then adventuresome = 5;\
+if adventuresome_alil = 1 then adventuresome = 4;\
+if adventuresome_neit = 1 then adventuresome = 3;\
+if adventuresome_dlil = 1 then adventuresome = 2;\
+if adventuresome_dlot = 1 then adventuresome = 1;\
+if love_idea_travel_abroad_alot = 1 then love_idea_travel_abroad = 5;\
+if love_idea_travel_abroad_alil  = 1 then love_idea_travel_abroad = 4;\
+if love_idea_travel_abroad_neit  = 1 then love_idea_travel_abroad = 3;\
+if love_idea_travel_abroad_dlil  = 1 then love_idea_travel_abroad = 2;\
+if love_idea_travel_abroad_dlot  = 1 then love_idea_travel_abroad = 1;\
+if trvl_plan_unknwn_cmpny_alot = 1 then trvl_plan_unknwn_cmpny = 5;\
+if trvl_plan_unknwn_cmpny_alil  = 1 then trvl_plan_unknwn_cmpny = 4;\
+if trvl_plan_unknwn_cmpny_neit  = 1 then trvl_plan_unknwn_cmpny = 3;\
+if trvl_plan_unknwn_cmpny_dlil  = 1 then trvl_plan_unknwn_cmpny = 2;\
+if trvl_plan_unknwn_cmpny_dlot  = 1 then trvl_plan_unknwn_cmpny = 1;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+/*Descriptors*/\
+\
+if fire = . then fire_tablet = 0;\
+if fire = 1 then fire_tablet = 1;\
+if galaxy = . then samsung_galaxy = 0;\
+if galaxy = 1 then samsung_galaxy = 1;\
+if HGTV = . then HGTV = 0;\
+if HGTV = 1 then HGTV = 1;\
+if Gender_Male = . then Gender_Male = 0;\
+if Gender_Male = 1 then Gender_Male = 1;\
+if Latino = . then Latino = 0;\
+if Latino = 1 then Latino = 1;\
+if TheBachelor = . then TheBachelor = 0;\
+if TheBachelor = 1 then TheBachelor = 1;\
+if char_uses_brand_alot = 1 then char_uses_brand = 5;\
+if char_uses_brand_alil = 1 then char_uses_brand = 4;\
+if char_uses_brand_neit  = 1 then char_uses_brand = 3; \
+if char_uses_brand_dlil = 1 then char_uses_brand = 2;\
+if char_uses_brand_dlot  = 1 then char_uses_brand = 1; \
+if tech_connects_alot = 1 then tech_connects = 5;\
+if tech_connects_alil = 1 then tech_connects = 4;\
+if tech_connects_neit = 1 then tech_connects = 3;\
+if tech_connects_dlil = 1 then tech_connects = 2;\
+if tech_connects_dlot = 1 then tech_connects = 1;\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+/* now attach the values for each of the variables using the proc format labels */\
+format   internet_src_entertainment  creative_person  social_site_dif_device  /*pay_extra_quality_goods important_well_informed*/  buy_neighbors_approve  dfct_say_no_to_kids char_uses_brand tech_connects myscale.\
+                apple_ipad  fire_tablet samsung_galaxy HGTV Gender_Male Latino TheBachelor yesno. ;\
+run;\
+/* now run freqs to check your work */\
+proc freq data = myvars;\
+tables\
+internet_src_entertain_alot\
+internet_src_entertain_alil   \
+internet_src_entertain_neit\
+internet_src_entertain_dlil\
+internet_src_entertain_dlot\
+creative_person_alot\
+creative_person_alil \
+creative_person_neit\
+creative_person_dlil\
+creative_person_dlot                                           \
+socialsite_difdevice_alot\
+socialsite_difdevice_alil\
+socialsite_difdevice_neit\
+socialsite_difdevice_dlil\
+socialsite_difdevice_dlot\
+/*pay_extra_quality_goods_alot\
+pay_extra_quality_goods_alil\
+pay_extra_quality_goods_neit\
+pay_extra_quality_goods_dlil\
+pay_extra_quality_goods_dlot\
+important_well_informed_alot\
+important_well_informed_alil\
+important_well_informed_neit\
+important_well_informed_dlil\
+important_well_informed_dlot*/\
+dfct_say_no_to_kids_alot\
+dfct_say_no_to_kids_alil\
+dfct_say_no_to_kids_neit\
+dfct_say_no_to_kids_dlil\
+dfct_say_no_to_kids_dlot\
+buy_neighbors_approve_alot\
+buy_neighbors_approve_alil\
+buy_neighbors_approve_neit\
+buy_neighbors_approve_dlil\
+buy_neighbors_approve_dlot\
+happy_stnrd_living_alot\
+happy_stnrd_living_alil\
+happy_stnrd_living_neit\
+happy_stnrd_living_dlil\
+happy_stnrd_living_dlot      \
+optimist_alot \
+optimist_alil \
+optimist_neit \
+optimist_dlil \
+optimist_dlot \
+\
+love_buy_gadget_alot\
+love_buy_gadget_alil\
+love_buy_gadget_neit\
+love_buy_gadget_dlil\
+love_buy_gadget_dlot\
+first_friends_tech_alot\
+first_friends_tech_alil\
+first_friends_tech_neit\
+first_friends_tech_dlil \
+first_friends_tech_dlot\
+/*pay_anything_electronic_alot\
+pay_anything_electronic_alil\
+pay_anything_electronic_neit\
+pay_anything_electronic_dlil\
+pay_anything_electronic_dlot*/\
+have_lots_gadgets_alot\
+have_lots_gadgets_alil\
+have_lots_gadgets_neit\
+have_lots_gadgets_dlil\
+have_lots_gadgets_dlot\
+keep_up_tech_alot\
+keep_up_tech_alil\
+keep_up_tech_neit\
+keep_up_tech_dlil\
+keep_up_tech_dlot\
+\
+/*always_brand_name_alot\
+always_brand_name_alil\
+always_brand_name_neit\
+always_brand_name_dlil\
+always_brand_name_dlot\
+buy_neighbors_approve_alot\
+buy_neighbors_approve_alil\
+buy_neighbors_approve_neit\
+buy_neighbors_approve_dlil\
+buy_neighbors_approve_dlot\
+easily_swayed_alot\
+easily_swayed_alil\
+easily_swayed_neit\
+easily_swayed_dlil\
+easily_swayed_dlot\
+keep_young_looking_alot\
+keep_young_looking_alil\
+keep_young_looking_neit\
+keep_young_looking_dlil\
+keep_young_looking_dlot\
+/* family_thinks_well_alot\
+family_thinks_well_alil\
+family_thinks_well_neit\
+family_thinks_well_dlil\
+family_thinks_well_dlot */\
+\
+vac_dif_places_alot \
+vac_dif_places_alil \
+vac_dif_places_neit \
+vac_dif_places_dlil \
+vac_dif_places_dlot \
+/*vac_exp_diff_from_friends_alot \
+vac_exp_diff_from_friends_alil \
+vac_exp_diff_from_friends_neit \
+vac_exp_diff_from_friends_dlil \
+vac_exp_diff_from_friends_dlot*/\
+adventuresome_alot \
+adventuresome_alil \
+adventuresome_neit \
+adventuresome_dlil \
+adventuresome_dlot \
+love_idea_travel_abroad_alot \
+love_idea_travel_abroad_alil \
+love_idea_travel_abroad_neit \
+love_idea_travel_abroad_dlil \
+love_idea_travel_abroad_dlot \
+trvl_plan_unknwn_cmpny_alot \
+trvl_plan_unknwn_cmpny_alil \
+trvl_plan_unknwn_cmpny_neit \
+trvl_plan_unknwn_cmpny_dlil \
+trvl_plan_unknwn_cmpny_dlot \
+\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device\
+/*pay_extra_quality_goods\
+important_well_informed*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+\
+apple_ipad\
+love_buy_gadget\
+/*pay_anything_electronic*/\
+first_friends_tech\
+have_lots_gadgets\
+keep_up_tech\
+\
+/*always_brand_name\
+buy_neighbors_approve\
+easily_swayed\
+keep_young_looking\
+/* family_thinks_well; */\
+\
+vac_dif_places\
+/*vac_exp_diff_from_friends*/\
+adventuresome\
+love_idea_travel_abroad\
+trvl_plan_unknwn_cmpny\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+char_uses_brand\
+tech_connects\
+fire_tablet\
+samsung_galaxy\
+HGTV\
+Gender_Male\
+Latino\
+TheBachelor;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 run ; \
+\
+\
+/* factor analysis, set eigenval, rotate, scree, pca */\
+proc factor data = myvars\
+maxiter=100\
+method=principal\
+mineigen=1\
+rotate=varimax\
+nfactors=2\
+msa\
+scree\
+score print\
+out=myscores;\
+var\
+love_buy_gadget\
+first_friends_tech\
+/*pay_anything_electronic*/\
+have_lots_gadgets\
+keep_up_tech\
+/*always_brand_name\
+buy_neighbors_approve\
+easily_swayed\
+keep_young_looking\
+/* family_thinks_well; */\
+vac_dif_places\
+/*vac_exp_diff_from_friends*/\
+adventuresome\
+love_idea_travel_abroad\
+trvl_plan_unknwn_cmpny;\
+run;\
+\
+/* rename the factor variables */\
+data clusready;\
+set myscores;\
+rename factor2 = early_adopter_tech;\
+rename factor1 = adventurous_traveler;\
+rename myid = resp_id;\
+run;   \
+\
+/* k means cluster analysis k=3 to k=9  */\
+\
+proc fastclus data=clusready maxiter=100 maxclusters=3 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;    \
+\
+proc fastclus data=clusready maxiter=100 maxclusters=4 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;   \
+\
+proc fastclus data=clusready maxiter=100 maxclusters=5 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;\
+ \
+proc fastclus data=clusready maxiter=100 maxclusters=6 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;\
+ \
+proc fastclus data=clusready maxiter=100 maxclusters=7 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;\
+\
+proc fastclus data=clusready maxiter=100 maxclusters=8 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;\
+\
+proc fastclus data=clusready maxiter=100 maxclusters=9 out=finalclus;\
+var \
+early_adopter_tech\
+adventurous_traveler\
+/*image_conscious*/\
+internet_src_entertainment\
+creative_person\
+social_site_dif_device;\
+/*important_well_informed;\
+pay_extra_quality_goods;*/\
+buy_neighbors_approve\
+dfct_say_no_to_kids\
+happy_stnrd_living\
+optimist\
+run;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+/*GAP analysis*/\
+\
+proc hpclus data=clusready maxclusters=8\
+noc=abc(b=30 minclusters=3 align=pca criterion=firstpeak);\
+\
+/* score puts CLUSTER variable in dataset and OUT= outputs the data set */\
+score out=mycluster;\
+\
+/* here are the drivers for the HPCLUS cluster solution */\
+input \
+early_adopter_tech\
+internet_src_entertainment \
+happy_stnrd_living \
+love_idea_travel_abroad\
+/ level=interval;\
+\
+/* only the variables listed in the ID statement will be kept in the MYCLUSTER data set*/\
+/* so be sure to put your id variable, drivers and descritpor variables in the ID statement */\
+\
+id resp_id \
+early_adopter_tech\
+internet_src_entertainment \
+happy_stnrd_living \
+love_idea_travel_abroad\
+apple_ipad\
+fire_tablet\
+samsung_galaxy\
+HGTV\
+TheBachelor\
+Latino\
+Gender_Male\
+char_uses_brand\
+tech_connects;\
+run; 
+\f1\fs32 \
+\
+
+\f0\fs24 proc fastclus data=clusready out=myclust maxclusters=4 maxiter=100;\
+var\
+early_adopter_tech\
+internet_src_entertainment \
+happy_stnrd_living \
+love_idea_travel_abroad;\
+run;\
+\
+proc sort data=myclust out=mysort;\
+By cluster;\
+run;\
+\
+proc means data=mysort;\
+By cluster;\
+Var\
+apple_ipad\
+fire_tablet\
+samsung_galaxy\
+HGTV\
+TheBachelor\
+Latino\
+Gender_Male\
+char_uses_brand\
+tech_connects;\
+Run;\
+}
